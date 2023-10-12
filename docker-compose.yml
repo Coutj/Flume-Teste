@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  flume:
+    image: probablyfine/flume:latest
+    container_name: flume
+    environment:
+      - FLUME_AGENT_NAME=docker 
+    volumes:
+      - ./tmp/config.conf:/opt/flume-config/flume.conf
+      - ./sources:/tmp/sources
+      - ./sinks:/tmp/sinks
