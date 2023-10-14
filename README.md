@@ -6,5 +6,5 @@
 ```
 
 ```bash
-    flume-ng agent --conf-file /opt/flume-config/flume.conf/spool-to-loer.properties --name agent1 -Dflume.root.logger=WARN.console
+    flume-ng agent --conf-file /opt/flume-config/flume.conf/spool-to-logger.properties --name agent1 -Dflume.root.logger=WARN.console
 ```
